@@ -6,7 +6,7 @@ Inline quote tag for Kirby.
 
 ```
 (quote: <text>)
-(quote: <text> cite: <cite>)
+(quote: <text> source: <source_url>)
 (quote: <text> lang: <language>)
 ```
 
