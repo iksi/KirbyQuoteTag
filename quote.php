@@ -9,14 +9,14 @@
 
 kirbytext::$tags['quote'] = array(
     'attr' => array(
-        'source',
         'class',
-        'lang'
+        'lang',
+        'link'
     ),
     'html' => function($tag) {
         $element = new Brick('q');
         $element->addClass($tag->attr('class'));
-        $element->attr('cite', $tag->attr('source'));
+        $element->attr('cite', $tag->attr('link'));
         $element->attr('lang', $tag->attr('lang'));
         $element->append($tag->attr('quote'));
 
